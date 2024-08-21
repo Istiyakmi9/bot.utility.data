@@ -19,7 +19,7 @@ public class DbManager {
     @Autowired
     ObjectMapper mapper;
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     @Autowired
     DbManager(Template template) {
@@ -35,8 +35,7 @@ public class DbManager {
         String query = dbUtils.get(type);
         List<Map<String, Object>> result = jdbcTemplate.queryForList(query);
 
-        List<T> emps = mapper.convertValue(result, new TypeReference<List<T>>() {});
-        return emps;
+        return mapper.convertValue(result, new TypeReference<List<T>>() {});
     }
 
     public <T> T getById(T instance, Class<T> type) throws Exception {
@@ -46,7 +45,6 @@ public class DbManager {
 
         List<Map<String, Object>> result = jdbcTemplate.queryForList(query);
 
-        T emps = mapper.convertValue(result, new TypeReference<T>() {});
-        return emps;
+        return mapper.convertValue(result, new TypeReference<T>() {});
     }
 }
