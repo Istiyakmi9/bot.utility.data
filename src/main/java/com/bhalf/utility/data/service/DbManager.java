@@ -1,6 +1,6 @@
-package com.bot.utility.data.service;
+package com.bhalf.utility.data.service;
 
-import com.bot.utility.data.utils.Template;
+import com.bhalf.utility.data.utils.Template;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;

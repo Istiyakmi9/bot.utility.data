@@ -1,4 +1,4 @@
-package com.bot.utility.data;
+package com.bhalf.utility.data;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

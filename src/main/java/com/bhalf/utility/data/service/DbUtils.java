@@ -1,8 +1,8 @@
-package com.bot.utility.data.service;
+package com.bhalf.utility.data.service;
 
-import com.bot.utility.data.annotations.Column;
-import com.bot.utility.data.annotations.Id;
-import com.bot.utility.data.annotations.Table;
+import com.bhalf.utility.data.annotations.Column;
+import com.bhalf.utility.data.annotations.Id;
+import com.bhalf.utility.data.annotations.Table;
 import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
